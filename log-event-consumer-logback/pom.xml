@@ -4,8 +4,13 @@
     <artifactId>log-event-consumer-logback</artifactId>
     <packaging>jar</packaging>
     <name>log-event-consumer-logback</name>
-    <groupId>com.github.raipc</groupId>
-    <version>0.1.0</version>
+    <version>${parent.version}</version>
+    <parent>
+        <groupId>com.github.raipc</groupId>
+        <artifactId>log-event-consumer</artifactId>
+        <version>0.2.0-SNAPSHOT</version>
+    </parent>
+    <description>Implementation of logback log event consumer</description>
 
     <properties>
         <logback.version>1.2.3</logback.version>
@@ -15,32 +20,12 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>log-event-consumer-api</artifactId>
-            <version>${project.version}</version>
+            <version>0.1.0</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.18</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.5.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>
