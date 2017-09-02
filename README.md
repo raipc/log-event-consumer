@@ -1,1 +1,1 @@
-# log-consumer-logback
+# log-event-consumer
