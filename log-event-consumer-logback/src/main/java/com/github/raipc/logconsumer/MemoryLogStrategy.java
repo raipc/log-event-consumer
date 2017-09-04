@@ -5,7 +5,7 @@ import java.io.ByteArrayOutputStream;
 public class MemoryLogStrategy implements LogStrategy {
     private final ByteArrayOutputStream byteArrayOutputStream;
 
-    public MemoryLogStrategy(MemoryAppender appender) {
+    public MemoryLogStrategy(AbstractMemoryAppender appender) {
         this.byteArrayOutputStream = appender.getOutputStream();
     }
 

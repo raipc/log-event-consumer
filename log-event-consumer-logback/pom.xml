@@ -8,7 +8,7 @@
     <parent>
         <groupId>com.github.raipc</groupId>
         <artifactId>log-event-consumer</artifactId>
-        <version>0.2.0-SNAPSHOT</version>
+        <version>0.2.0</version>
     </parent>
     <description>Implementation of logback log event consumer</description>
 
